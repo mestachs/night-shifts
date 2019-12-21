@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.punch-card .punch-card-row {
+  display: flex;
+  border-bottom: 1px solid gray;
+  height: 70px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.punch-card .punch-card-row .punch-card-row-label {
+  position: absolute;
+}
+.punch-card .punch-card-row .punch-card-dot-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+.punch-card .punch-card-row .punch-card-dot-container .dot-wrapper {
+  margin: auto;
+}
+.punch-card
+  .punch-card-row
+  .punch-card-dot-container
+  .dot-wrapper
+  .punch-card-dot {
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  will-change: transform;
+  transition: transform 0.5s ease-in-out;
+}
+.punch-card .punch-card-axis {
+  display: flex;
+  margin: 0 20px;
+}
+.punch-card .punch-card-axis .punch-card-axis-tick {
+  flex: 1;
+  text-align: center;
+}
